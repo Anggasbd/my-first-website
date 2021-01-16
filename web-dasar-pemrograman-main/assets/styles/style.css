@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
+* {
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Trocchi', sans-serif; 
+    background: #f6f5f5;
+}
+
+header {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00334e;
+    text-align: center;
+    color: #f6f5f5;
+}
+
+h2, h3 {
+    color: #145374;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #145374;
+    padding: 14px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: white;
+    margin-left: 6px;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 70%;
+}
+
+.featured-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #ee6f57;
+    padding: 20px;
+    margin-top: 20px;
+    color: #1a1a2b;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+}
+
+aside img {
+    border-radius: 50%;
+    background-color: #145374;
+}
+
+aside table {
+    margin: 10px 0;
+}
+
+/* Responsive Breakpoint */
+
+/* mobile */
+
+@media screen and (max-width: 576px) {
+    nav a {
+        font-size: 2.1vh;
+        background-color: #145374;
+        transition: all 0.3s;
+        margin: 4px 0;
+        padding: 0.5px;
+    } 
+
+    p {
+        font-size: 2.1vh;
+    }
+}
+
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    #content,
+    nav ul,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* full */
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #515070;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
